@@ -1,7 +1,9 @@
 import { faker } from '@faker-js/faker'
 import { PrismaClient } from '@prisma/client'
 import { hash } from 'bcryptjs'
+import { config } from 'dotenv'
 
+config()
 const prisma = new PrismaClient()
 
 async function seed() {
